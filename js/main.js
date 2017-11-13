@@ -22,6 +22,9 @@ document.addEventListener('DOMContentLoaded', function(){
     inputs.forEach(function(input){
       if (input.value === ""){
         input.classList.add('error');
+        input.addEventListener('mousemove', function(){
+          input.classList.toggle('error');
+        });
       }
     });
   });
