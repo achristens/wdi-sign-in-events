@@ -5,13 +5,17 @@ document.addEventListener('DOMContentLoaded', function(){
   var modal  = document.querySelector('.modal');
   var close  = document.querySelector('.close');
   var submit = document.querySelector('.submit');
-  var inputs  = document.querySelectorAll('input');
+  var inputs = document.querySelectorAll('input');
+  var body   = document.querySelector('body');
+
+  body.addEventListener('click', function(e){
+    if (e.target.classList.contains('modal') ){ 
+      modal.style.display = 'none';
+    }
+  });
 
   button.addEventListener('click', function(){
-    // modal.style.animation = 'opac 1s';
     modal.style.display = 'block';
-    return 'transitionstart';
-    // modal.style.transform = translate(0,0);
   });
 
   close.addEventListener('click', function(){
