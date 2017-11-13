@@ -8,10 +8,10 @@ document.addEventListener('DOMContentLoaded', function(){
   var inputs  = document.querySelectorAll('input');
 
   button.addEventListener('click', function(){
-    // button.addEventListener('transitionend', function() {
-    // modal.style.transition = 'opacity 1000ms ease-in-out'
-      modal.style.display = 'block';
-    // });
+    // modal.style.animation = 'opac 1s';
+    modal.style.display = 'block';
+    return 'transitionstart';
+    // modal.style.transform = translate(0,0);
   });
 
   close.addEventListener('click', function(){
